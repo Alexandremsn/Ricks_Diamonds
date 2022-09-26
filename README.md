@@ -66,7 +66,7 @@ Foi feito um plot de um segundo Boxplot e verificamos uma distribuição bem mai
 
 Realizamos novamente o pairplot e tivemos uma atenuação do formato price x carat
   
-<img src=images/box_2%20(1).png>
+<img src=images/spair%20(1).png>
   
 Vamos analizar mais a fundo esta variável plotamos ela individualmente.
 percebemos uma ditância variável da região de concentração.
