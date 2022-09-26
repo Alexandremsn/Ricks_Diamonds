@@ -3,7 +3,7 @@
 
 # RICK'S DIAMONDS
 <div align="left">
-Uso de uma base da dados de características e preços de diamantes, limpeza de dados e contrução de um modelo de regreção linear para prever os preços de uma uma segunda base de dados. 
+Uso de uma base de dados de características e preços de diamantes, limpeza de dados e construção de um modelo de regrssão linear para prever os preços de uma uma segunda base de dados. 
 
 
 ## Tecnologia
@@ -32,7 +32,7 @@ Os softwares  usados neste projeto foram:
 
 Será descrito abaixo através de textos e imagens.
 
-Para esta projeto usaremos duas bases de dados, a primeira servirá para treinar e testar o nosso modelo a segunda para usar efetivamente nosso modelo, o resultado será feito o upload em um site que alaviará o sucesso de nosso modelo.
+Para esta projeto usaremos duas bases de dados, a primeira servirá para treinar e testar o nosso modelo a segunda para usar efetivamente nosso modelo, o resultado será feito o upload em um site que avaliará o sucesso de nosso modelo.
 
 primeiramente realizamos a importação da base e verificamos o seu estado.
 
