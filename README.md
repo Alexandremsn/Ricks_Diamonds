@@ -1,5 +1,5 @@
 <div align="center">
-<img src="images/logodiamond.png">
+<img src="images/diamonds-transparent-background-20.png" width="400">
 
 # RICK'S DIAMONDS
 <div align="left">
@@ -11,8 +11,6 @@ Uso de uma base da dados de características e preços de diamantes, limpeza de 
 Os softwares  usados neste projeto foram:
 
 * Python version  3.9.5
-* Tableau version 2022.2
-* MySQL Workbench 0.8 CE
 
 ## Serviços Usados
 
@@ -21,39 +19,32 @@ Os softwares  usados neste projeto foram:
 
 ## Bibliotecas Python
 
-* Requests
 * Pandas
-* Sqlalchemy
-* Dotenv
-* Json
-
-
-## Gráficos Tableau
-
-* Cartões
-* Pizza
-* Linhas
-* Tabelas
-
+* Numpy
+* Matplotlib.pyplot
+* Seaborn
+* Sklearn.model_selection.train_test_split
+* Sklearn.linear_model.LinearRegression
+* Sklearn.metrics
+* Sklearn.preprocessing
 
 ## Como foi feito
 
 Será descrito abaixo através de textos e imagens.
 
-Para este projeto usamos a API RAWG, acessível no link: http://rawg.io
-Esta API, possui um banco de dados de vários jogos, com seus dados, avaliações, status dos jogos fornecidos por jogadores e diversas outras informações.
-Focaremos na varíavel avaliação e gênero, para verificarmos correlações e variações, se a preferência do público se alterou nos últimos 20 anos. Podemos também realizar inferências sobre os status dos jogos e número de votos o jogo recebeu.
+Para esta projeto usaremos duas bases de dados, a primeira servirá para treinar e testar o nosso modelo a segunda para usar efetivamente nosso modelo, o resultado será feito o upload em um site que alaviará o sucesso de nosso modelo.
 
-<img src=images/001.png>
+primeiramente realizamos a importação da base e verificamos o seu estado.
 
-Usamos uma das APIS chamada Game List, que fornece dados gerais sobre jogos, na imagem vemos os parâmetros que podem ser usados nesta API, 
-mais para frente veremos que os parâmetros page e page_size serão utilizados.
+<img src=images/diamond_001.png>
 
-<img src=images/002.png>
+Logo de cara percebemos diversas variáveis categóricas para simploficar usamos o código abaixo para realizar a sua converção em variáveis categóricas com labels numéricas.
+
+<img src=images/diamond_002.png>
 
 Também usamos o parâmetro Dates, pois no nosso projeto usaremos o filtro entre 01-01-2000 até 31-21-2020, assim gerando dados completos dos últimos 20 anos.
 
-<img src=images/003.png>
+<img src=images/diamond_003.png>
 
 Esta ultima parte dos parâmetros não utilizamos.
 
