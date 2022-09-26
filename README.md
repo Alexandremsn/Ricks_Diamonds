@@ -38,7 +38,7 @@ primeiramente realizamos a importação da base e verificamos o seu estado.
 
 <img src=images/diamond_001.png>
 
-Logo de cara percebemos diversas variáveis categóricas para simploficar usamos o código abaixo para realizar a sua converção em variáveis categóricas com labels numéricas.
+Logo de cara percebemos diversas variáveis categóricas para simplificar usamos o código abaixo para realizar a sua conversão em variáveis categóricas com labels numéricas.
 
 <img src=images/diamond_002.png>
   
@@ -46,11 +46,11 @@ Continuamos a nossa análise e usamos o Pairplot para plotar um comparativo de t
   
 <img src=images/fpair%20(3).png>  
 
-Outro fator de preucupação seria o fato do valor mínimo das dimenções era zero, asssim por se tratar de um objeto físico era impossível ter dimensões nulas, e dimensõe máximas muito grandes, assim plotamos um boxplot para verificar como estava a distribuição de valores.
+Outro fator de preocupação seria o fato do valor mínimo das dimensões era zero, assim por se tratar de um objeto físico era impossível ter dimensões nulas, e dimensões máximas muito grandes, assim plotamos um boxplot para verificar como estava a distribuição de valores.
    
 <img src=images/diamond_003.png>
 
-Foi plotado um Boxplot com as dimenções y e z e foi verificado a presença de alguns outliers.
+Foi plotado um Boxplot com as dimensões y e z e foi verificado a presença de alguns outliers.
   
 <img src=images/box1%20(1).png>
   
@@ -59,7 +59,7 @@ Assim foi optado por remover os objetos com dimensão maior que 10 vem como os c
 
 <img src=images/diamond_004.png>
 
-Após a remoção precebemos que comparando com a imagem anterior que removemos 26 linhas da base de dados. um valor muito baixo se comparado ao total de linhas.
+Após a remoção percebemos que comparando com a imagem anterior que removemos 26 linhas da base de dados. Um valor muito baixo se comparado ao total de linhas.
 Foi feito um plot de um segundo Boxplot e verificamos uma distribuição bem mais uniforme.
   
 <img src=images/box_2%20(1).png>
@@ -68,12 +68,12 @@ Realizamos novamente o pairplot e tivemos uma atenuação do formato price x car
   
 <img src=images/spair%20(1).png>
   
-Vamos analizar mais a fundo esta variável plotamos ela individualmente.
-percebemos uma ditância variável da região de concentração.
+Vamos analisar mais a fundo esta variável plotamos ela individualmente.
+percebemos uma distância variável da região de concentração.
 <img src=images/line_01.png>
   
-Aplicamos a escala logarítimica para suavizar o ruido e obtivemos sucesso agora a distância está mais uniforme.  
-Assim fazia sentido usar escala lograítimica na contrução de nosso modelo.
+Aplicamos a escala logarítmica para suavizar o ruido e obtivemos sucesso agora a distância está mais uniforme.  
+Assim fazia sentido usar escala logarítmica na contrução de nosso modelo.
   
 
   
@@ -81,11 +81,11 @@ Assim fazia sentido usar escala lograítimica na contrução de nosso modelo.
  
   
 Por fim a base ficou desta forma e decidimos adicionar a variável volume que seria a multiplicação dos 3 eixos
-em um teste de correlação apresentou uma corelação maior que os eixos individuais. 
+em um teste de correlação apresentou uma correlação maior que os eixos individuais. 
   
 <img src=images/diamond_005.png>
 
-Na de estimação de dados tivemos uma linha com ausência de alguns dados, assim para a coluna que faltava apenas o z usaremo a fórmula fornecida pelo codebook, e para a linha com ausência de dados nas 3 dimensões vamos usar uma coluna para doar os dados
+Na de estimação de dados tivemos uma linha com ausência de alguns dados, assim para a coluna que faltava apenas o z usaremos a fórmula fornecida pelo codebook, e para a linha com ausência de dados nas 3 dimensões vamos usar uma coluna para doar os dados
 assim pegamos uma informação de outra coluna com mesmo depth e mesma table.
 
 <img src=images/diamond_006.png>
