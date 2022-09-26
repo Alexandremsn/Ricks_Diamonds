@@ -80,31 +80,42 @@ Assim fazia sentido usar escala lograítimica na contrução de nosso modelo.
 <img src=images/line_02.png>  
  
   
-Importando a nossa segunda base para realizar a previsão.
-realizamos as mesmas converções de dados das variáveis categóricas.
-  
+Por fim a base ficou desta forma e decidimos adicionar a variável volume que seria a multiplicação dos 3 eixos
+em um teste de correlação apresentou uma corelação maior que os eixos individuais. 
   
 <img src=images/diamond_005.png>
 
+Na de estimação de dados tivemos uma linha com ausência de alguns dados, assim para a coluna que faltava apenas o z usaremo a fórmula fornecida pelo codebook, e para a linha com ausência de dados nas 3 dimensões vamos usar uma coluna para doar os dados
+assim pegamos uma informação de outra coluna com mesmo depth e mesma table.
 
 <img src=images/diamond_006.png>
   
-  
+assim aplicamos esta função para o cálculo do volume  
   
 <img src=images/diamond_007.png>
 
+e esta função para o cálculo das dimenções faltantes.
+
 <img src=images/diamond_008.png>
+
+executamos as funções foi necessário adicionar 1 nas categorias pois como usariamos escala logarótimica o valor zero daria erro na função assim reajustamos a escala para partir de 1
 
 <img src=images/diamond_009.png>
 
+construindo o modelo, para as variáveis dimensionais tinhamos pouco ruido assim decidi não aplicar a elas a função logarítimica.
 <img src=images/diamond_010.png>
+
+rodamos o teste da função e os números para o teste parecem muito promissores apesar de estarem em escala logaritimica ainda assim deram um valor baixo.
 
 <img src=images/diamond_011.png>
 
+agora aplicamos nosso modelo ao dataset que queremos prever os preços.
+
 <img src=images/diamond_012.png>
 
+salvamos em um arquivo .csv
   
-Futuramente, seria interessante, usar outras apis para incrementar os dados desta base de dados ou dados externos.
+Futuramente, seria interessante, testar mais extensamente as combinações de função logarítimica e dados sem tranformação e usar outros métodos como decision forest para obter melhores resultados.
 
 
 ## Recursos Usados
@@ -112,15 +123,15 @@ Futuramente, seria interessante, usar outras apis para incrementar os dados dest
   - Importação de Database
   - Limpeza de dados
   - Criação de um DataFrame
-  - Criação de arquivo .csv
-  - Análise de Tabelas
-  - Carga da base de dados em ambiente SQL
-  - Criação de um Dashboard
+  - Análise de parâmetros estatíticos
+  - Análise de gáficos
+  - Construção de um modelo de regessão linear
+  - Teste e validação deste modelo
   
 
 ## Links
 
-  - Repositório: https://github.com/Alexandremsn/shark_atacks_data_cleaning
+  - Repositório: https://github.com/Alexandremsn/Ricks_Diamonds
   - Se for econtrado um bug, favor entrar em contato alexandremsneto1986@gmail.com
 
 
